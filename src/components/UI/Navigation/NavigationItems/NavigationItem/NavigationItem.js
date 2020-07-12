@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classes from './NavigationItem.module.css';
 
 const NavigationItem = (props) => (
@@ -8,5 +9,10 @@ const NavigationItem = (props) => (
 		</a>
 	</li>
 );
+
+NavigationItem.propTypes = {
+	link: PropTypes.string.isRequired,
+	active: PropTypes.bool.isRequired
+};
 
 export default NavigationItem;

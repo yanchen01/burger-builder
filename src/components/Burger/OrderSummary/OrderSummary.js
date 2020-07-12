@@ -1,6 +1,7 @@
 import React from 'react';
 import Aux from '../../../hoc/Auxiliary';
 import Button from '../../UI/Button/Button';
+import PropTypes from 'prop-types';
 
 const OrderSummary = (props) => {
 	const ingredientSummary = Object.keys(props.ingredients).map((igKey) => {
@@ -28,6 +29,10 @@ const OrderSummary = (props) => {
 			</Button>
 		</Aux>
 	);
+};
+
+OrderSummary.propTypes = {
+	ingredients: PropTypes.object.isRequired
 };
 
 export default OrderSummary;
