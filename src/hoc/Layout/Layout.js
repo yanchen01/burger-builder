@@ -9,7 +9,6 @@ class Layout extends Component {
 	state = {
 		showSideDrawer: false
 	};
-
 	SideDrawerCloseHandler = () => {
 		this.setState({ showSideDrawer: false });
 	};
